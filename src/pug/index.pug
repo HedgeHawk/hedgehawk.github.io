@@ -4,16 +4,41 @@ html(lang='en')
     head
 
         meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='description', content='Embedded Systems · Computer Vision · System Architecture')
+        meta(name='author', content='Jens Schleusner')
+        meta(name='keywords', content='Resume, Job, Embedded Systems, Computer Vision, System Architecture, C++')
 
-        title Resume - Start Bootstrap Theme
+        title Jens Schleusner Resume
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+        link(rel='icon', type='image/png', href='assets/img/favicon-32x32.png', sizes="32x32")
+        link(rel='icon', type='image/png', href='assets/img/favicon-16x16.png', sizes="16x16")
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico', sizes="any")
+
+        script(type="application/ld+json").
+          {
+             "@context": "https://schema.org",
+             "@type": "Person",
+             "email": "info@schleusner.dev",
+             "image": "https://schleusner.dev/assets/img/profile2.jpg",
+             "jobTitle": "Research Engineer",
+             "name": "Jens Schleusner",
+             "worksFor": [
+             {
+                "@type": "Organization",
+                "name": "Leibniz Universität Hannover",
+                "sameAs": "https://www.uni-hannover.de/"
+             }],
+             "url": "https://schleusner.dev",
+             "sameAs" : [ "https://www.xing.com/profile/Jens_Schleusner",
+             "https://www.ims.uni-hannover.de/de/schleusner/",
+             "https://github.com/HedgeHawk",
+             "https://www.linkedin.com/in/jens-schleusner"]
+          }
+
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js', crossorigin='anonymous')
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
@@ -29,7 +54,7 @@ html(lang='en')
             a.navbar-brand.js-scroll-trigger(href='#page-top')
                 span.d-block.d-lg-none Jens Schleusner
                 span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/favicon.ico', alt='')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile2.jpg', alt='Foto von Jens Schleusner')
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
@@ -44,8 +69,8 @@ html(lang='en')
                         a.nav-link.js-scroll-trigger(href='#publications') Publications
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#skills') Skills
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#interests') Interests
+                    li.nav-item 
+                        a.nav-link.js-scroll-trigger(href='#links') Links
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#impressum') Impressum
 
@@ -64,16 +89,17 @@ html(lang='en')
                     p.lead.mb-5
                     //    | I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
                     .social-icons
-                        a.social-icon(href='mailto:job@schleusner.dev') 
+                        a.social-icon(href='mailto:job@schleusner.dev')
                             i.fas.fa-at
                         a.social-icon(href='https://www.ims.uni-hannover.de/de/schleusner/')
                             i.fas.fa-graduation-cap
                         a.social-icon(href='https://www.xing.com/profile/Jens_Schleusner')
                             i.fab.fa-xing
+                        a.social-icon(href='https://www.linkedin.com/in/jens-schleusner')
+                            i.fab.fa-linkedin-in
                         a.social-icon(href='https://github.com/HedgeHawk')
                             i.fab.fa-github
-                        //a.social-icon(href='https://www.linkedin.com/in/jens-schleusner')
-                        //    i.fab.fa-linkedin-in
+
 
 
 
@@ -230,16 +256,25 @@ html(lang='en')
 
             hr.m-0
 
-            // Interests
-            section#interests.resume-section
+            // Links
+            section#links.resume-section
                 .resume-section-content
-                    h2.mb-5 Interests
-                    p
-                    //    | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
+                    h2.mb-5 Links
                     p.mb-0
-                    //    | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
+                        | Institute of Microelectronic Systems:
+                        a(href="https://www.ims.uni-hannover.de/de/schleusner") ims.uni-hannover.de
+                    p.mb-0
+                        | Xing:
+                        a(href="https://www.xing.com/profile/Jens_Schleusner") xing.com
+                    p.mb-0
+                        | GitHub:
+                        a(href="https://github.com/HedgeHawk") github.com
+                    p.mb-0
+                        | Your Business-Photoshooting:
+                        a(href="https://peony-emotions.de") peony-emotions.de
 
             hr.m-0
+
 
             // Impressum
             section#impressum.resume-section
@@ -266,7 +301,7 @@ html(lang='en')
                     p.mb-0
                         | Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
                     p.mb-0
-                        | Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+                        | Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen. Quelle Impressum: e-recht24.de
             hr.m-0
 
         // Bootstrap core JS
