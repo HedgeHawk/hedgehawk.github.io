@@ -5,6 +5,7 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv="Content-Security-Policy", content="default-src 'self'; font-src fonts.gstatic.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com stackpath.bootstrapcdn.com")
         meta(name='description', content='Embedded Systems · Computer Vision · System Architecture')
         meta(name='author', content='Jens Schleusner')
         meta(name='keywords', content='Resume, Job, Embedded Systems, Computer Vision, System Architecture, C++')
@@ -38,12 +39,16 @@ html(lang='en')
 
 
         // Font Awesome icons (free version)
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js', crossorigin='anonymous')
+        script(defer, src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+        link(rel="preconnect", href="https://fonts.gstatic.com/")
+        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&display=swap', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&display=swap', rel='stylesheet', type='text/css')
 
+        // Additional preloads
+        link(rel="preload", href="js/scripts.js", as="script")
+        link(rel="preload", href="assets/img/profile3.jpg", as="image")
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
@@ -54,7 +59,7 @@ html(lang='en')
             a.navbar-brand.js-scroll-trigger(href='#page-top')
                 span.d-block.d-lg-none Jens Schleusner
                 span.d-none.d-lg-block
-                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile2.jpg', alt='Foto von Jens Schleusner')
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile3.jpg', alt='Foto von Jens Schleusner')
             button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
@@ -62,13 +67,13 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#about') About
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#experience') Experience
-                    li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#education') Education
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#publications') Publications
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') Education
                     li.nav-item 
                         a.nav-link.js-scroll-trigger(href='#links') Links
                     li.nav-item
@@ -100,10 +105,91 @@ html(lang='en')
                         a.social-icon(href='https://github.com/HedgeHawk')
                             i.fab.fa-github
 
+            hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 Skills
+                    //.subheading.mb-3 Programming Languages & Tools
+                    ul.list-inline.dev-icons
+                        li.list-inline-item
+                            i.fab.fa-docker
+                        li.list-inline-item
+                            i.fab.fa-git
+                        li.list-inline-item
+                            i.fab.fa-github
+                        li.list-inline-item
+                            i.fab.fa-gitlab
+                        li.list-inline-item
+                            i.fab.fa-linux
+                        li.list-inline-item
+                            i.fab.fa-python
+                        li.list-inline-item
+                            i.fab.fa-raspberry-pi
+                        li.list-inline-item
+                            i.fab.fa-ubuntu
+                    .subheading.mb-3 Programming Languages & Tools
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Modern C++ & CMake
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Git-Collaboration & CI/CD-based Toolchains
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | OpenCV image processing
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Python
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Linux development and administration
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Container Deployment using Docker & Podman
+            hr.m-0
+
+            // Publications
+            section#publications.resume-section
+                .resume-section-content
+                    h2.mb-5 Publications
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            p.font-weight-bold Deep Learning Based Classification of Pedestrian Vulnerability Trained on Synthetic Datasets
+                            div Schleusner, J.; Neu, L.; Behmann, N.; Blume, H. (2019)
+                            div IEEE 9th International Conference on Consumer Electronics (ICCE-Berlin)
+                            a(href="https://ieeexplore.ieee.org/document/8966161") IEEEXplore.com
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            p.font-weight-bold Probabilistic 3D Point Cloud Fusion on Graphics Processors for Automotive (Poster)
+                            div Behmann, N.; Cheng, Y.; Schleusner, J.; Blume, H. (2019)
+                            div International Conference on Information Fusion (FUSION), Ottawa
+                            a(href="https://ieeexplore.ieee.org/document/9011304") IEEEXplore.com
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            p.font-weight-bold Design and Evaluation of a TTA-based ASIP for the Extraction of SIFT-Features
+                            div Schleusner, J. (2016)
+                            div Master Thesis
+                            a(href="https://www.ims.uni-hannover.de/de/studium/studien-abschlussarbeiten/abgeschlossene-arbeiten/detailansicht/?tx_t3luhresprojects_t3luhresprojectlist%5BresearchProject%5D=147&tx_t3luhresprojects_t3luhresprojectlist%5Baction%5D=show&tx_t3luhresprojects_t3luhresprojectlist%5Bcontroller%5D=ResearchProject") ims.uni-hannover.de
 
 
-
-
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            p.font-weight-bold Design and Implementation of Digital Sensor Interfaces for a High Temperature ASIC Demonstration Platform
+                            div Schleusner, J. (2014)
+                            div Bachelor Thesis
+                            a(href="https://www.ims.uni-hannover.de/de/studium/studien-abschlussarbeiten/abgeschlossene-arbeiten/detailansicht/?tx_t3luhresprojects_t3luhresprojectlist%5BresearchProject%5D=407&tx_t3luhresprojects_t3luhresprojectlist%5Baction%5D=show&tx_t3luhresprojects_t3luhresprojectlist%5Bcontroller%5D=ResearchProject") ims.uni-hannover.de
 
             hr.m-0
 
@@ -175,86 +261,6 @@ html(lang='en')
 
             hr.m-0
 
-            // Publications
-            section#publications.resume-section
-                .resume-section-content
-                    h2.mb-5 Publications
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            p.font-weight-bold Deep Learning Based Classification of Pedestrian Vulnerability Trained on Synthetic Datasets
-                            div Schleusner, J.; Neu, L.; Behmann, N.; Blume, H. (2019)
-                            div IEEE 9th International Conference on Consumer Electronics (ICCE-Berlin)
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            p.font-weight-bold Probabilistic 3D Point Cloud Fusion on Graphics Processors for Automotive (Poster)
-                            div Behmann, N.; Cheng, Y.; Schleusner, J.; Blume, H. (2019)
-                            div International Conference on Information Fusion (FUSION), Ottawa
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            p.font-weight-bold Design and Evaluation of a TTA-based ASIP for the Extraction of SIFT-Features
-                            div Schleusner, J. (2016)
-                            div Master Thesis
-
-                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
-                        .flex-grow-1
-                            p.font-weight-bold Design and Implementation of Digital Sensor Interfaces for a High Temperature ASIC Demonstration Platform
-                            div Schleusner, J. (2014)
-                            div Bachelor Thesis
-            hr.m-0
-
-            // Skills
-            section#skills.resume-section
-                .resume-section-content
-                    h2.mb-5 Skills
-                    //.subheading.mb-3 Programming Languages & Tools
-                    ul.list-inline.dev-icons
-                        li.list-inline-item
-                            i.fab.fa-docker
-                        li.list-inline-item
-                            i.fab.fa-git
-                        li.list-inline-item
-                            i.fab.fa-github
-                        li.list-inline-item
-                            i.fab.fa-gitlab
-                        li.list-inline-item
-                            i.fab.fa-linux
-                        li.list-inline-item
-                            i.fab.fa-python
-                        li.list-inline-item
-                            i.fab.fa-raspberry-pi
-                        li.list-inline-item
-                            i.fab.fa-ubuntu
-                    .subheading.mb-3 Programming Languages & Tools
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Modern C++ & CMake
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Git-Collaboration & CI/CD-based Toolchains
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | OpenCV image processing
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Python
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Linux development and administration
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Container Deployment using Docker & Podman
-
-            hr.m-0
 
             // Links
             section#links.resume-section
@@ -263,6 +269,9 @@ html(lang='en')
                     p.mb-0
                         | Institute of Microelectronic Systems:
                         a(href="https://www.ims.uni-hannover.de/de/schleusner") ims.uni-hannover.de
+                    p.mb-0
+                        | Google Scholar:
+                        a(href="https://scholar.google.com/citations?user=0a9Q_hUAAAAJ&hl=en") scholar.google.com
                     p.mb-0
                         | Xing:
                         a(href="https://www.xing.com/profile/Jens_Schleusner") xing.com
