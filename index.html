@@ -4,19 +4,74 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' https://cdnjs.cloudflare.com" />
+        <!-- HTML Meta Tags-->
         <meta name="description" content="Embedded Systems · Computer Vision · System Architecture" />
         <meta name="author" content="Jens Schleusner" />
+        <meta name="image" content="https://schleusner.dev/assets/img/profile.jpg" />
         <meta name="keywords" content="Resume, Job, Embedded Systems, Computer Vision, System Architecture, C++" />
+        <!-- OG Meta Tags-->
+        <meta property="og:site_name" content="Jens Schleusner" />
+        <meta property="og:title" content="Jens Schleusner Resume" />
+        <meta property="og:description" content="Embedded Systems · Computer Vision · System Architecture" />
+        <meta property="og:image" itemprop="image" content="https://schleusner.dev/assets/img/profile.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://schleusner.dev" />
+        <meta property="og:image:secure_url" content="https://schleusner.dev/assets/img/profile.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
         <title>Jens Schleusner Resume</title>
         <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" sizes="any" />
         <script type="application/ld+json">
             {
+                "@context": "https://schema.org/",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "About",
+                        "item": "https://schleusner.dev"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Skills",
+                        "item": "https://schleusner.dev/#skills"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Publications",
+                        "item": "https://schleusner.dev/#publications"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Experience",
+                        "item": "https://schleusner.dev/#experience"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "Education",
+                        "item": "https://schleusner.dev/#education"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 6,
+                        "name": "Links",
+                        "item": "https://schleusner.dev/#links"
+                    }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
                 "@context": "https://schema.org",
                 "@type": "Person",
                 "email": "info@schleusner.dev",
-                "image": "https://schleusner.dev/assets/img/profile2.jpg",
+                "image": "https://schleusner.dev/assets/img/profile.jpg",
                 "jobTitle": "Research Engineer",
                 "name": "Jens Schleusner",
                 "worksFor": [
@@ -27,7 +82,8 @@
                     }
                 ],
                 "url": "https://schleusner.dev",
-                "sameAs": ["https://www.xing.com/profile/Jens_Schleusner", "https://www.ims.uni-hannover.de/de/schleusner/", "https://github.com/HedgeHawk", "https://www.linkedin.com/in/jens-schleusner"]
+                "sameAs": ["https://www.xing.com/profile/Jens_Schleusner", "https://www.ims.uni-hannover.de/de/schleusner/", "https://github.com/HedgeHawk", "https://www.linkedin.com/in/jens-schleusner"],
+                "brand": "Jens Schleusner"
             }
         </script>
         <!-- Font Awesome icons (free version)-->
@@ -38,7 +94,7 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&amp;display=swap" rel="stylesheet" type="text/css" />
         <!-- Additional preloads-->
         <link rel="preload" href="js/scripts.js" as="script" />
-        <link rel="preload" href="assets/img/profile3.jpg" as="image" />
+        <link rel="preload" href="assets/img/profile.jpg" as="image" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -47,7 +103,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Jens Schleusner</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile3.jpg" alt="Foto von Jens Schleusner" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Foto von Jens Schleusner" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
