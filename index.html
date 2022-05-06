@@ -89,9 +89,60 @@
         <!-- Font Awesome icons (free version)-->
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js" integrity="sha512-Cvxz1E4gCrYKQfz6Ne+VoDiiLrbFBvc6BPh4iyKo2/ICdIodfgc5Q9cBjRivfQNUXBCEnQWcEInSXsvlNHY/ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com/" />
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&amp;display=swap" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&amp;display=swap" rel="stylesheet" type="text/css" />
+        <link rel="preload" href="assets/fonts/SairaExtraCondensed-Medium.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Saira Extra Condensed';
+                font-style: normal;
+                font-weight: 500;
+                src: url('assets/fonts/SairaExtraCondensed-Medium.woff2') format('woff2');
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/SairaExtraCondensed-Bold.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Saira Extra Condensed';
+                font-style: normal;
+                font-weight: 700;
+                src: url('assets/fonts/SairaExtraCondensed-Bold.woff2') format('woff2');
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-Medium.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: normal;
+                font-weight: 400;
+                src: url('assets/fonts/Mulish-Medium.woff2') format('woff2');
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-Italic.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: italic;
+                font-weight: 400;
+                src: url('assets/fonts/Mulish-Italic.woff2') format('woff2');
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-ExtraBold.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: normal;
+                font-weight: 800;
+                src: url('assets/fonts/Mulish-ExtraBold.woff2') format('woff2');
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-ExtraBoldItalic.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: italic;
+                font-weight: 800;
+                src: url('assets/fonts/Mulish-ExtraBoldItalic.woff2') format('woff2');
+            }
+        </style>
         <!-- Additional preloads-->
         <link rel="preload" href="js/scripts.js" as="script" />
         <link rel="preload" href="assets/img/profile.jpg" as="image" />
