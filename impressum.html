@@ -2,8 +2,9 @@
 <html lang="de">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' https://cdnjs.cloudflare.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self'; style-src 'self' 'unsafe-inline' ; script-src 'self' https://cdnjs.cloudflare.com" />
+        <!-- HTML Meta Tags-->
         <meta name="description" content="Impressum Jens Schleusner schleusner.dev" />
         <meta name="author" content="Jens Schleusner" />
         <meta name="keywords" content="Impressum" />
@@ -12,31 +13,73 @@
         <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" sizes="any" />
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "email": "info@schleusner.dev",
-                "image": "https://schleusner.dev/assets/img/profile.jpg",
-                "jobTitle": "Research Engineer",
-                "name": "Jens Schleusner",
-                "worksFor": [
-                    {
-                        "@type": "Organization",
-                        "name": "Leibniz Universität Hannover",
-                        "sameAs": "https://www.uni-hannover.de/"
-                    }
-                ],
-                "url": "https://schleusner.dev",
-                "sameAs": ["https://www.xing.com/profile/Jens_Schleusner", "https://www.ims.uni-hannover.de/de/schleusner/", "https://github.com/HedgeHawk", "https://www.linkedin.com/in/jens-schleusner"]
-            }
-        </script>
+        <!-- Bootstrap core JS-->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Core theme JS-->
+        <script defer src="js/scripts.js"></script>
         <!-- Font Awesome icons (free version)-->
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/js/all.min.js" integrity="sha512-Cvxz1E4gCrYKQfz6Ne+VoDiiLrbFBvc6BPh4iyKo2/ICdIodfgc5Q9cBjRivfQNUXBCEnQWcEInSXsvlNHY/ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com/" />
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700&amp;display=swap" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i&amp;display=swap" rel="stylesheet" type="text/css" />
+        <link rel="preload" href="assets/fonts/SairaExtraCondensed-Medium.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Saira Extra Condensed';
+                font-style: normal;
+                font-weight: 500;
+                src: url('assets/fonts/SairaExtraCondensed-Medium.woff2') format('woff2');
+                font-display: swap;
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/SairaExtraCondensed-Bold.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Saira Extra Condensed';
+                font-style: normal;
+                font-weight: 700;
+                src: url('assets/fonts/SairaExtraCondensed-Bold.woff2') format('woff2');
+                font-display: swap;
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-Medium.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: normal;
+                font-weight: 400;
+                src: url('assets/fonts/Mulish-Medium.woff2') format('woff2');
+                font-display: swap;
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-Italic.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: italic;
+                font-weight: 400;
+                src: url('assets/fonts/Mulish-Italic.woff2') format('woff2');
+                font-display: swap;
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-ExtraBold.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: normal;
+                font-weight: 800;
+                src: url('assets/fonts/Mulish-ExtraBold.woff2') format('woff2');
+                font-display: swap;
+            }
+        </style>
+        <link rel="preload" href="assets/fonts/Mulish-ExtraBoldItalic.woff2" as="font" crossorigin="anonymous" />
+        <style>
+            @font-face {
+                font-family: 'Muli';
+                font-style: italic;
+                font-weight: 800;
+                src: url('assets/fonts/Mulish-ExtraBoldItalic.woff2') format('woff2');
+                font-display: swap;
+            }
+        </style>
         <!-- Additional preloads-->
         <link rel="preload" href="js/scripts.js" as="script" />
         <link rel="preload" href="assets/img/profile.jpg" as="image" />
@@ -81,9 +124,5 @@
             </section>
             <hr class="m-0" />
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
