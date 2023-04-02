@@ -1,6 +1,6 @@
 /*!
-* Start Bootstrap - Resume v7.0.5 (https://hedgehawk.github.io/startbootstrap-resume)
-* Copyright 2013-2022 Start Bootstrap
+* Start Bootstrap - Resume v7.0.6 (https://hedgehawk.github.io/startbootstrap-resume)
+* Copyright 2013-2023 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
 //
