@@ -539,10 +539,6 @@ button:not(:disabled),
   margin-bottom: 0 !important;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem !important;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem !important;
 }
@@ -639,9 +635,14 @@ p.lead {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  color: #dee2e6;
+}
+
+#sideNav .navbar-nav .nav-item:hover .nav-link {
+  color: white;
 }
 #sideNav .navbar-toggler:focus {
-  outline-color: #0182e7;
+  outline-color: white;
 }
 
 @media (min-width: 992px) {
