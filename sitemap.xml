@@ -4,10 +4,7 @@
   <url>
     <loc>https://schleusner.dev</loc>
     <image:image>
-      <image:loc>https://schleusner.dev/assets/img/profile.jpg</image:loc>
-      <image:caption>Jens Schleusner</image:caption>
-      <image:geo_location>Hannover, Germany</image:geo_location>
-      <image:title>Jens Schleusner</image:title>
+      <image:loc>https://schleusner.dev/assets/img/schleusner.webp</image:loc>
     </image:image>
-  </url> 
+  </url>
 </urlset> 
