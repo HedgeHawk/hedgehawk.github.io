@@ -211,10 +211,10 @@
                     <p class="lead mb-5"></p>
                     <div class="social-icons">
                         <a class="social-icon" href="mailto:job@schleusner.dev" title="E-Mail"><i class="fas fa-at"></i></a>
-                        <a class="social-icon" href="https://www.ims.uni-hannover.de/de/schleusner/" title="Work"><i class="fas fa-graduation-cap"></i></a>
-                        <a class="social-icon" href="https://www.xing.com/profile/Jens_Schleusner" title="Xing"><i class="fab fa-xing"></i></a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/jens-schleusner" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/HedgeHawk" title="Github"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://www.ims.uni-hannover.de/de/schleusner/" target="_blank" title="Work"><i class="fas fa-graduation-cap"></i></a>
+                        <a class="social-icon" href="https://www.xing.com/profile/Jens_Schleusner" target="_blank" title="Xing"><i class="fab fa-xing"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/jens-schleusner" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/HedgeHawk" target="_blank" title="Github"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
@@ -271,28 +271,28 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">t41-ptp</h3>
                             <div>The Arduino compatible t41-ptp library provides high precision time synchronization for the Teensy 4.1 microcontroller platform.</div>
-                            <a href="https://github.com/IMS-AS-LUH/t41-ptp">t41-ptp</a>
+                            <a href="https://github.com/IMS-AS-LUH/t41-ptp" target="_blank">t41-ptp</a>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">realtime-offset</h3>
                             <div>The realtime-offset Linux kernel module provides the offset between clock_monotonic and clock_realtime via a device interface.</div>
-                            <a href="https://github.com/HedgeHawk/realtime-offset">realtime-offset</a>
+                            <a href="https://github.com/HedgeHawk/realtime-offset" target="_blank">realtime-offset</a>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Adventskranz</h3>
                             <div>The Adventskranz repository provides a header-only C++ library to calculate the number of burning candles on an Advent wreath for any given date.</div>
-                            <a href="https://github.com/HedgeHawk/Adventskranz">Adventskranz</a>
+                            <a href="https://github.com/HedgeHawk/Adventskranz" target="_blank">Adventskranz</a>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Pixelblaze Sunrise</h3>
                             <div>The Pixelblaze Sunrise repository provides a realtime sunrise implementation for the Pixelblaze RGBW-LED controller in JavaScript.</div>
-                            <a href="https://github.com/HedgeHawk/PixelblazeSunrise">PixelblazeSunrise</a>
+                            <a href="https://github.com/HedgeHawk/PixelblazeSunrise" target="_blank">PixelblazeSunrise</a>
                         </div>
                     </div>
                 </div>
@@ -304,58 +304,71 @@
                     <h2 class="mb-5">Publications</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Sub-Microsecond Time Synchronization for Network-Connected Microcontrollers</h3>
-                            <div class="subheading mb-3">Schleusner, J.; Fahnemann, C.; Pfleiderer, R.; Blume, H. (2024)</div>
-                            <div>IEEE International Conference on Consumer Electronics (ICCE)</div>
-                            <a href="https://ieeexplore.ieee.org/document/10444401">IEEEXplore.com</a>
+                            <h3 class="mb-2">Sub-Microsecond Time Synchronization for Network-Connected Microcontrollers</h3>
+                            <div class="subheading mb-0">Schleusner, J.; Fahnemann, C.; Pfleiderer, R.; Blume, H. (2024)</div>
+                            <div class="subheading mb-0">IEEE International Conference on Consumer Electronics (ICCE)</div>
+                            <p>
+                                This paper presents a bare-metal implementation of the IEEE 1588 Precision Time Protocol (PTP) for network-connected microcontroller edge devices, enabling sub-microsecond time synchronization in automotive networks and multimedia applications. The implementation leverages the hardware timestamping capabilities of the microcontroller (MCU) to implement a two-stage Phase-locked loop (PLL) for offset and drift correction of the hardware clock. Using the MCU platform as a PTP master enables the distribution of a sub-microsecond accurate Global Positioning System (GPS) timing signal over a network. The performance of the system is evaluated using master-slave configurations where the platform is synchronized with a GPS, an embedded platform, and a microcontroller master. Results show that MCU platforms can be synchronized to an external GPS reference over a network with a standard deviation of 40.7 nanoseconds, enabling precise time synchronization for
+                                bare-metal microcontroller systems in various applications.
+                            </p>
+                            <div><a href="https://doi.org/10.1109/ICCE59016.2024.10444401" target="_blank">IEEEXplore.com (Final published article)</a></div>
+                            <div><a href="https://doi.org/10.15488/16561" target="_blank">Open Access (Accepted article)</a></div>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Synthetic Aperture Radar Algorithms on Transport Triggered Architecture Processors using OpenCL</h3>
-                            <div class="subheading mb-3">Rother, N.; Mätzner, L.; Jääskeläinen, P.; Leppänen, T.; Schleusner, J.; Blume, H. (2023)</div>
-                            <div>IEEE International Radar Conference (RADAR)</div>
-                            <a href="https://ieeexplore.ieee.org/document/10371028">IEEEXplore.com</a>
+                            <h3 class="mb-2">Synthetic Aperture Radar Algorithms on Transport Triggered Architecture Processors using OpenCL</h3>
+                            <div class="subheading mb-0">Rother, N.; Mätzner, L.; Jääskeläinen, P.; Leppänen, T.; Schleusner, J.; Blume, H. (2023)</div>
+                            <div class="subheading mb-0">IEEE International Radar Conference (RADAR)</div>
+                            <div><a href="https://doi.org/10.1109/RADAR54928.2023.10371028" target="_blank">IEEEXplore.com (Final published article)</a></div>
+                            <div><a href="https://doi.org/10.15488/15965" target="_blank">Open Access (Accepted article)</a></div>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Dynamic Model-Based Safety Margins for High-Density Matrix Headlight Systems</h3>
-                            <div class="subheading mb-3">Schleusner, J.; Blume, H.; Lampe, S. (2023)</div>
-                            <div>IEEE Transactions on Intelligent Transportation Systems</div>
-                            <a href="https://ieeexplore.ieee.org/document/10101680">IEEEXplore.com</a>
+                            <h3 class="mb-2">Dynamic Model-Based Safety Margins for High-Density Matrix Headlight Systems</h3>
+                            <div class="subheading mb-0">Schleusner, J.; Blume, H.; Lampe, S. (2023)</div>
+                            <div class="subheading mb-0">IEEE Transactions on Intelligent Transportation Systems</div>
+                            <p>
+                                Real-time masking of vehicles in a dynamic road environment is a demanding task for adaptive driving beam systems of modern headlights. Next-generation high-density matrix headlights enable precise, high-resolution projections, while advanced driver assistance systems enable detection and tracking of objects with high update rates and low-latency estimation of the pose of the ego-vehicle. Accurate motion tracking and precise coverage of the masked vehicles are necessary to avoid glare while maintaining a high light throughput for good visibility. Safety margins are added around the mask to mitigate glare and flicker caused by the update rate and latency of the system. We provide a model to estimate the effects of spatial and temporal sampling on the safety margins for high- and low-density headlight resolutions and different update rates. The vertical motion of the ego-vehicle is simulated based on a dynamic model of a vehicle suspension system to model
+                                the impact of the motion-to-photon latency on the mask. Using our model, we evaluate the light throughput of an actual matrix headlight for the relevant corner cases of dynamic masking scenarios depending on pixel density, update rate, and system latency. We apply the masks provided by our model to a high beam light distribution to calculate the loss of luminous flux and compare the results to a light throughput approximation technique from the literature.
+                            </p>
+                            <div><a href="https://doi.org/10.1109/TITS.2023.3264768" target="_blank">IEEEXplore.com (Final published article)</a></div>
+                            <div><a href="https://doi.org/10.15488/16560" target="_blank">Open Access (Accepted article)</a></div>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Deep Learning Based Classification of Pedestrian Vulnerability Trained on Synthetic Datasets</h3>
-                            <div class="subheading mb-3">Schleusner, J.; Neu, L.; Behmann, N.; Blume, H. (2019)</div>
-                            <div>IEEE 9th International Conference on Consumer Electronics (ICCE-Berlin)</div>
-                            <a href="https://ieeexplore.ieee.org/document/8966161">IEEEXplore.com</a>
+                            <h3 class="mb-2">Deep Learning Based Classification of Pedestrian Vulnerability Trained on Synthetic Datasets</h3>
+                            <div class="subheading mb-0">Schleusner, J.; Neu, L.; Behmann, N.; Blume, H. (2019)</div>
+                            <div class="subheading mb-0">IEEE 9th International Conference on Consumer Electronics (ICCE-Berlin)</div>
+                            <p>The reliable detection of vulnerable road users and the assessment of the actual vulnerability is an important task for the collision warning algorithms of driver assistance systems. Current systems make assumptions about the road geometry which can lead to misclassification. We propose a deep learning-based approach to reliably detect pedestrians and classify their vulnerability based on the traffic area they are walking in. Since there are no pre-labeled datasets available for this task, we developed a method to train a network first on custom synthetic data and then use the network to augment a customer-provided training dataset for a neural network working on real world images. The evaluation shows that our network is able to accurately classify the vulnerability of pedestrians in complex real world scenarios without making assumptions on road geometry.</p>
+                            <div><a href="https://doi.org/10.1109/ICCE-Berlin47944.2019.8966161" target="_blank">IEEEXplore.com (Final published article)</a></div>
+                            <div><a href="https://doi.org/10.15488/16562" target="_blank">Open Access (Accepted article)</a></div>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Probabilistic 3D Point Cloud Fusion on Graphics Processors for Automotive (Poster)</h3>
-                            <div class="subheading mb-3">Behmann, N.; Cheng, Y.; Schleusner, J.; Blume, H. (2019)</div>
-                            <div>International Conference on Information Fusion (FUSION), Ottawa</div>
-                            <a href="https://ieeexplore.ieee.org/document/9011304">IEEEXplore.com</a>
+                            <h3 class="mb-2">Probabilistic 3D Point Cloud Fusion on Graphics Processors for Automotive (Poster)</h3>
+                            <div class="subheading mb-0">Behmann, N.; Cheng, Y.; Schleusner, J.; Blume, H. (2019)</div>
+                            <div class="subheading mb-0">International Conference on Information Fusion (FUSION), Ottawa</div>
+                            <div><a href="https://doi.org/10.23919/FUSION43075.2019.9011304" target="_blank">IEEEXplore.com (Final published article)</a></div>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Design and Evaluation of a TTA-based ASIP for the Extraction of SIFT-Features</h3>
-                            <div class="subheading mb-3">Schleusner, J. (2016)</div>
-                            <div>Master Thesis</div>
-                            <a href="https://www.ims.uni-hannover.de/de/studium/studien-abschlussarbeiten/abgeschlossene-arbeiten/detailansicht/projects/entwurf-und-evaluation-eines-tta-basierten-asip-fuer-die-extraktion-von-sift-merkmalen">ims.uni-hannover.de</a>
+                            <h3 class="mb-2">Design and Evaluation of a TTA-based ASIP for the Extraction of SIFT-Features</h3>
+                            <div class="subheading mb-0">Schleusner, J. (2016)</div>
+                            <div class="subheading mb-0">Master Thesis</div>
+                            <a href="https://www.ims.uni-hannover.de/de/studium/studien-abschlussarbeiten/abgeschlossene-arbeiten/detailansicht/projects/entwurf-und-evaluation-eines-tta-basierten-asip-fuer-die-extraktion-von-sift-merkmalen" target="_blank">ims.uni-hannover.de</a>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Design and Implementation of Digital Sensor Interfaces for a High Temperature ASIC Demonstration Platform</h3>
-                            <div class="subheading mb-3">Schleusner, J. (2014)</div>
-                            <div>Bachelor Thesis</div>
-                            <a href="https://www.ims.uni-hannover.de/de/studium/studien-abschlussarbeiten/abgeschlossene-arbeiten/detailansicht/projects/konzipierung-und-implementierung-von-digitalen-sensorschnittstellen-fuer-eine-hochtemperatur-asic-demonstrationsplattform">ims.uni-hannover.de</a>
+                            <h3 class="mb-2">Design and Implementation of Digital Sensor Interfaces for a High Temperature ASIC Demonstration Platform</h3>
+                            <div class="subheading mb-0">Schleusner, J. (2014)</div>
+                            <div class="subheading mb-0">Bachelor Thesis</div>
+                            <a href="https://www.ims.uni-hannover.de/de/studium/studien-abschlussarbeiten/abgeschlossene-arbeiten/detailansicht/projects/konzipierung-und-implementierung-von-digitalen-sensorschnittstellen-fuer-eine-hochtemperatur-asic-demonstrationsplattform" target="_blank">ims.uni-hannover.de</a>
                         </div>
                     </div>
                 </div>
@@ -370,7 +383,7 @@
                             <h3 class="mb-0">Best Session Presentation Award</h3>
                             <div class="subheading mb-3">ICCE 2024 CT04-1</div>
                             <div>Jens Schleusner (Leibniz Universität Hannover, Germany), Sub-Microsecond Time Synchronization for Network-Connected Microcontrollers</div>
-                            <a href="https://icce.org/2024/awards/">icce.org</a>
+                            <a href="https://icce.org/2024/awards/" target="_blank">icce.org</a>
                         </div>
                     </div>
                 </div>
@@ -444,19 +457,19 @@
                     <h2 class="mb-5">Links</h2>
                     <p class="mb-0">
                         Institute of Microelectronic Systems:
-                        <a href="https://www.ims.uni-hannover.de/de/schleusner">ims.uni-hannover.de</a>
+                        <a href="https://www.ims.uni-hannover.de/de/schleusner" target="_blank">ims.uni-hannover.de</a>
                     </p>
                     <p class="mb-0">
                         Google Scholar:
-                        <a href="https://scholar.google.com/citations?user=0a9Q_hUAAAAJ&amp;hl=en">scholar.google.com</a>
+                        <a href="https://scholar.google.com/citations?user=0a9Q_hUAAAAJ&amp;hl=en" target="_blank">scholar.google.com</a>
                     </p>
                     <p class="mb-0">
                         Xing:
-                        <a href="https://www.xing.com/profile/Jens_Schleusner">xing.com</a>
+                        <a href="https://www.xing.com/profile/Jens_Schleusner" target="_blank">xing.com</a>
                     </p>
                     <p class="mb-0">
                         GitHub:
-                        <a href="https://github.com/HedgeHawk">github.com</a>
+                        <a href="https://github.com/HedgeHawk" target="_blank">github.com</a>
                     </p>
                 </div>
             </section>
@@ -465,7 +478,7 @@
             <section class="resume-section" id="impressum">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Impressum</h2>
-                    <p class="mb-0"><a href="https://schleusner.dev/impressum.html">Impressum</a></p>
+                    <p class="mb-0"><a href="https://schleusner.dev/impressum.html" target="_blank">Impressum</a></p>
                 </div>
             </section>
         </div>
