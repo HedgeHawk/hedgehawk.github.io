@@ -304,7 +304,7 @@
                             <h3 class="mb-0">t41-ptp</h3>
                             <div>The Arduino compatible t41-ptp library provides high precision time synchronization for the Teensy 4.1 microcontroller platform.</div>
                             <a href="https://github.com/IMS-AS-LUH/t41-ptp" target="_blank">t41-ptp</a>
-                            <a href="https://ims-as-luh.github.io/t41-ptp/" target="_blank">t41-ptp-web</a>
+                            <!--a(href="https://ims-as-luh.github.io/t41-ptp/", target='_blank') t41-ptp-web-->
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -346,6 +346,28 @@
                     <h2 class="mb-5">Publications</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-2">PTP-Synchronized Tri-Level Sync Generation for Networked Multi-Sensor Systems</h3>
+                            <div class="subheading mb-0">Riggers, C.; Schleusner, J.; Renke, O.; Blume, H. (2024)</div>
+                            <div class="subheading mb-0">IEEE 30th International Conference on Embedded and Real-Time Computing Systems and Applications (RTCSA)</div>
+                            <p>
+                                Synchronization of sensor devices is crucial for concurrent data acquisition. Numerous protocols have emerged for this task, and for some multi-sensor setups to operate synchronized, a conversion between deployed protocols is needed. This paper presents a bare-metal implementation of a Tri- Level Sync signal generator on a microcontroller unit (MCU) synchronized to a master clock via the IEEE 1588 Precision Time Protocol (PTP). Cameras can be synchronized by locking their frame generators to the Tri-Level Sync signal. As this synchronization depends on a stable analog signal, a careful design of the signal generation based on a PTP-managed clock is required. The limited tolerance of a camera to clock frequency adjustments for continuous operations imposes rate-limits on the PTP-controller. Simulations using a software model demonstrate the resulting controller instabilities from rate-limiting. This problem is addressed by introducing a linear prediction
+                                mode to the controller, which estimates the realizable offset change during rate-limited frequency alignment. By adjusting the frequency in a timely manner, a large overshoot of the controller can be avoided. Additionally, a cascading controller design that decouples the PTP from the clock update rate proved to be advantageous to increase the camera’s tolerable frequency change. This paper demonstrates that a MCU is a viable platform to perform PTP-synchronized Tri-Level Sync generation. Our open source implementation is available for use by the research community.
+                            </p>
+                            <div><a href="https://doi.org/10.1109/RTCSA62462.2024.00022" target="_blank">IEEEXplore.com (Final published article)</a></div>
+                            <div><a href="https://github.com/IMS-AS-LUH/t41-tri-sync-ptp" target="_blank">T41-Tri-Sync-PTP (GitHub)</a></div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-2">Ethernet-based lighting-architecture: Image stabilization for high-resolution light functions</h3>
+                            <div class="subheading mb-0">Pfleiderer, R.; Schleusner, J.; Blume, H.; Kreipe, B.; Lampe, S.; Speh, J. (2024)</div>
+                            <div class="subheading mb-0">Automotive Ethernet Congress (AEC)</div>
+                            <p>Single pair Ethernet in combination with Ethernet endpoints provides a scalable basis for the direct control of sensors and actuators in zonal vehicle networks. As recently shown, this approach is also ideal for driving high-resolution light functions. The ability to transmit different parallel data streams to actuators opens a wide field for new applications. Here, we show a method for stabilising high-resolution light projections in driving operation. The stabilization of the light image is based on an inertial measurement unit that records vehicle movements in real-time. An algorithm in a central control unit continuously calculates correction values for the position and distortion compensation of the light distribution and sends this data to the lamp via Ethernet, preferably 10BASE-T1S. Two methods are combined in a proof of concept: predictive correction with video data rate and image shifting in the headlamp’s frame buffer at high frequency.</p>
+                            <div><a href="https://doi.org/10.15488/18004" target="_blank">Open Access</a></div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-2">Sub-Microsecond Time Synchronization for Network-Connected Microcontrollers</h3>
                             <div class="subheading mb-0">Schleusner, J.; Fahnemann, C.; Pfleiderer, R.; Blume, H. (2024)</div>
                             <div class="subheading mb-0">IEEE International Conference on Consumer Electronics (ICCE)</div>
@@ -355,6 +377,7 @@
                             </p>
                             <div><a href="https://doi.org/10.1109/ICCE59016.2024.10444401" target="_blank">IEEEXplore.com (Final published article)</a></div>
                             <div><a href="https://doi.org/10.15488/16561" target="_blank">Open Access (Accepted article)</a></div>
+                            <div><a href="https://github.com/IMS-AS-LUH/t41-ptp" target="_blank">T41-PTP (GitHub)</a></div>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
