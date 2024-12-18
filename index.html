@@ -371,6 +371,10 @@
                             <h3 class="mb-2">Sub-Microsecond Time Synchronization for Network-Connected Microcontrollers</h3>
                             <div class="subheading mb-0">Schleusner, J.; Fahnemann, C.; Pfleiderer, R.; Blume, H. (2024)</div>
                             <div class="subheading mb-0">IEEE International Conference on Consumer Electronics (ICCE)</div>
+                            <figure>
+                                <img class="img-fluid" src="assets/img/t41-ptp.webp" alt="Sub-Microsecond Time Synchronization Figure" width="640" height="419" />
+                                <figcaption class="text-muted">Figure: Illustration of timing synchronization</figcaption>
+                            </figure>
                             <p>
                                 This paper presents a bare-metal implementation of the IEEE 1588 Precision Time Protocol (PTP) for network-connected microcontroller edge devices, enabling sub-microsecond time synchronization in automotive networks and multimedia applications. The implementation leverages the hardware timestamping capabilities of the microcontroller (MCU) to implement a two-stage Phase-locked loop (PLL) for offset and drift correction of the hardware clock. Using the MCU platform as a PTP master enables the distribution of a sub-microsecond accurate Global Positioning System (GPS) timing signal over a network. The performance of the system is evaluated using master-slave configurations where the platform is synchronized with a GPS, an embedded platform, and a microcontroller master. Results show that MCU platforms can be synchronized to an external GPS reference over a network with a standard deviation of 40.7 nanoseconds, enabling precise time synchronization for
                                 bare-metal microcontroller systems in various applications.
