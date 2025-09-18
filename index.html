@@ -323,7 +323,7 @@
                     <h2 class="mb-5">Open Source Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">t41-ptp</h3>
+                            <h3 class="mb-0">A IEEE-1588 PTP library for the Teensy 4.1</h3>
                             <div>The Arduino compatible t41-ptp library provides high precision time synchronization for the Teensy 4.1 microcontroller platform.</div>
                             <a href="https://github.com/IMS-AS-LUH/t41-ptp" target="_blank">t41-ptp</a>
                             <!--a(href="https://ims-as-luh.github.io/t41-ptp/", target='_blank') t41-ptp-web-->
@@ -331,7 +331,7 @@
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">realtime-offset</h3>
+                            <h3 class="mb-0">A linux kernel module to provide realtime clock offset</h3>
                             <div>The realtime-offset Linux kernel module provides the offset between clock_monotonic and clock_realtime via a device interface.</div>
                             <a href="https://github.com/HedgeHawk/realtime-offset" target="_blank">realtime-offset</a>
                         </div>
@@ -366,6 +366,23 @@
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Publications</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-2">Zeitdeterministische Systemarchitekturen für hochauflösende Matrix-Scheinwerfer</h3>
+                            <div class="subheading mb-0">Schleusner, J. (2025)</div>
+                            <div class="subheading mb-0">Doctoral thesis (Dissertation)</div>
+                            <figure>
+                                <img class="img-fluid" src="assets/img/dissertation_schleusner.webp" alt="HD matrix headlight projection Figure" width="770" height="234" />
+                                <figcaption class="text-muted">Figure: Illustration of a headlight projection</figcaption>
+                            </figure>
+                            <p>
+                                High-resolution matrix headlights are an advanced driver assistance system that provides the best possible illumination of the surrounding area for safe and comfortable nighttime driving. In addition to glare-free high beams and adaptive light distributions, they display safety-relevant information directly on the road. The implementation of these applications requires system architectures that enable precise temporal and spatial control of the light distribution so that it is projected at the right time and place on the road. The accuracy and efficiency of light control in conventional system architectures is limited by high latencies, limited transmission bandwidths, and inaccurate mapping models. In this thesis, time-deterministic system architectures are designed based on a modeling of the system behavior to solve the described problems. The focus is on precise ego-motion compensation of the vehicle and dynamic masking of road users to avoid glare.
+                                The relevant system parameters, including resolution, refresh rate, and latency, are identified based on analytical models of the dynamic projection geometry and used to evaluate system architectures. Techniques such as asynchronous reprojection, which can significantly reduce the data rate by transmitting displacement information instead of full light distributions, play a key role in the optimization process, reducing system latency while improving the efficiency of lighting control. Three different architectural concepts were designed and evaluated in the study: centralized, decentralized, and hybrid systems. Centralized architectures are characterized by central processing of the light distribution on powerful hardware, such as GPUs. This allows for efficient computation and easy maintenance, but places high demands on the transmission rate. Decentralized architectures, on the other hand, shift processing to the headlight modules themselves, reducing
+                                latency but increasing hardware requirements. Hybrid architectures combine the best of both approaches, augmenting centralized computation with decentralized functions to enable latency-critical applications such as ego-motion compensation. The developed architectures were experimentally evaluated on prototype systems. The results show that hybrid approaches in particular allow a significant reduction of latency and thus an improvement of the stability of the light projections. The transfer rate is minimized by using asynchronous reprojection without compromising the precision of the projections.
+                            </p>
+                            <div><a href="https://doi.org/10.15488/19507" target="_blank">Open Access</a></div>
+                        </div>
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-2">PTP-Synchronized Tri-Level Sync Generation for Networked Multi-Sensor Systems</h3>
@@ -502,7 +519,7 @@
                             <div class="subheading mb-3">Leibniz University Hannover</div>
                             <p>Low-latency realtime video signal processing algorithms on embedded hardware platforms for high resolution LED-Matrix headlight systems. Our adaptive headlights prevent glare for drivers and pedestrians while increasing visibility and safety for nighttime driving.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2017 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">March 2017 - December 2025</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -533,7 +550,7 @@
                             <div class="subheading mb-3">Study towards Doctor of Engineering</div>
                             <div>Electrical Engineering · Microelectronics</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2017 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">July 2020 - August 2025</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
